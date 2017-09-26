@@ -50,7 +50,7 @@ var allFrequencies = [
 	
 	var a;
 	var b;
-	//start.addEventListener("click",getMidi());
+	start.addEventListener("click",getFrequencies(document.getElementById("midi")));
 	
 function checkInput(String text){
 	if(0=<text<128){
@@ -64,10 +64,10 @@ function getFrequencies(String text){
 	if(checkInput(text)){
 		a = text.parseInt
 		b = allFrequencies.getElementById(a);	
-		document.getElementById("text").innerHTML(b);
+		document.getElementById("wert").innerHTML(b);
 	}
 	else{
-		document.getElementById("text").innerHTML("Uengueltige midinote");
+		document.getElementById("wert").innerHTML("Uengueltige midinote");
 	}
 }
 	
