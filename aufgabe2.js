@@ -48,6 +48,26 @@ var allFrequencies = [
     23679.6430535446,   25087.70790283195,  26579.50064511649,
     28160,              29834.480737157748, 31608.53128039195];
 	
+	var a;
+	var b;
 	//start.addEventListener("click",getMidi());
 	
+function checkInput(String text){
+	if(0=<text<128){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+function getFrequencies(String text){
+	if(checkInput(text)){
+		a = text.parseInt
+		b = allFrequencies.getElementById(a);	
+		document.getElementById("text").innerHTML(b);
+	}
+	else{
+		document.getElementById("text").innerHTML("Uengueltige midinote");
+	}
+}
 	
